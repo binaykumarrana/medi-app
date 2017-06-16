@@ -9,6 +9,73 @@ import co.uk.rushorm.core.RushCore;
  */
 
 public class MedicineModel implements Rush {
+    public String medName;
+    public String medDose;
+    public int medQuantity;
+    public int numberOfDose;
+    public String reminderTime;
+    public int numberOfMedPurchased;
+
+    public int getMedQuantity() {
+        return medQuantity;
+    }
+
+    public void setMedDose(String medDose) {
+        this.medDose = medDose;
+    }
+
+    public void setMedName(String medName) {
+        this.medName = medName;
+    }
+
+    public void setMedQuantity(int medQuantity) {
+        this.medQuantity = medQuantity;
+    }
+
+    public void setNumberOfDose(int numberOfDose) {
+        this.numberOfDose = numberOfDose;
+    }
+
+    public void setNumberOfMedPurchased(int numberOfMedPurchased) {
+        this.numberOfMedPurchased = numberOfMedPurchased;
+    }
+
+    public void setReminderTime(String reminderTime) {
+        this.reminderTime = reminderTime;
+    }
+
+    public int getNumberOfDose() {
+        return numberOfDose;
+    }
+
+    public String getMedDose() {
+        return medDose;
+    }
+
+    public int getNumberOfMedPurchased() {
+        return numberOfMedPurchased;
+    }
+
+    public String getMedName() {
+        return medName;
+    }
+
+    public String getReminderTime() {
+        return reminderTime;
+    }
+
+    @Override
+    public String toString() {
+        return "MedicineModel{" +
+                "medName='" + medName + '\'' +
+                ", medDose='" + medDose + '\'' +
+                ", medQuantity=" + medQuantity +
+                ", numberOfDose=" + numberOfDose +
+                ", reminderTime='" + reminderTime + '\'' +
+                ", numberOfMedPurchased=" + numberOfMedPurchased +
+                '}';
+    }
+
     @Override
     public void save() {
         RushCore.getInstance().save(this);
