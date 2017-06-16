@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="black_35_percent">#59000000</color>
+    <color name="black_75_percent">#BF000000</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="background">#cccccc</color>
+</resources>
